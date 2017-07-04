@@ -29,7 +29,7 @@ The example program inverts a binary number; all `1`s are replaced by `0`s and v
 
 * **States** are defined by a textual (alphanumeric) identifier. *Example:* `foo`
 * **Instructions** occur within states and are triggered by a read character. They consist of one write, one move and one state transition. *Example:* `1 -> 0 L foo`
-* **Symbols** constitute the alphabet used for reads and writes. They may be chosen arbitrarily. *Example:* `1`
+* **Symbols** constitute the alphabet used for reads and writes. They may be chosen arbitrarily. Underscore (`_`) is used as the default, "blank" symbol. *Example:* `1`
 * **Moves** express the movement of the virtual magnetic tape, moving it either `L`eft or  `R`ight. Alternatively, the tape can `S`tay at the current location.
 * **Transitions** change the machine's state to alter its behavior.
 * **Tags** express certain meta-data about states, i.e. where the program starts (`[start]`) and where it ends (`[halt]`).
