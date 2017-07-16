@@ -60,7 +60,7 @@ def parse_code(codefile):
                 halt = name
             continue
         # Check for instruction
-        match = re.match(r'^(.) -> (.) ([LSR]) (\w+)$', line)
+        match = re.match(r'^(.) -> (.) ([LNR]) (\w+)$', line)
         if match is not None:
             read, write, move, transition = match.groups()
             alphabet |= {read, write}
